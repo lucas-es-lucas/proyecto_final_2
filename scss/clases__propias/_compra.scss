@@ -1,0 +1,17 @@
+.compra {
+     margin-top: 4rem;
+     padding: 1rem;
+     border: solid .2rem $color-link;
+     border-radius: 1%;
+     .pago {
+          &__medios {
+               display: flex;
+               flex-direction: row;
+               flex-wrap: wrap;
+               &__link {
+                    padding-right: 1.5rem;
+                    font-size: 2rem;
+               }
+          }
+     }
+}

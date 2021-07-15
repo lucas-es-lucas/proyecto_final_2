@@ -1,0 +1,35 @@
+* {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+}
+
+body {
+     background-color: $color-fondo;
+     font-family: $fuente-principal;
+     font-size: $fuente-tamano;
+     color: $color-texto;
+
+     ul {
+          list-style: none;
+     }
+
+     a {
+          text-decoration: none;
+          color: $color-link;
+          &:hover {
+               color: $color-texto;
+          }
+     }
+     
+     .container {
+          margin: 2rem auto;
+          .container__titulo {
+               margin-top: 2rem;
+               margin-bottom: 2rem;
+               font-size: $fuente-tamano * 2;
+               text-align: center;
+          }
+     }
+
+}

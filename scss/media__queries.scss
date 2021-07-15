@@ -1,0 +1,250 @@
+
+//PORTADA 
+@media only screen and (min-width: 768px) and (max-width: 1199px) {
+
+     .portada__section {
+          // background-color: aqua;
+          padding: 1rem;
+          display: flex;
+          flex-direction: row;
+          flex-wrap: wrap;
+          align-items: center;
+     }
+     .portada__info {
+          padding: .5rem;
+          &__titulo {
+               font-size: ($fuente-tamano * 1.5);
+          }
+          &__subtitulo {
+               font-size: ($fuente-tamano * 1.2);
+          }
+     }
+
+}
+
+@media only screen and (min-width: 1200px) {
+
+     .portada__section {
+          // background-color: blue;
+          padding: 2rem;
+          display: flex;
+          flex-direction: row;
+          flex-wrap: wrap;
+          align-items: center;
+     }
+     .portada__info {
+          padding: .5rem;
+          &__titulo {
+               font-size: ($fuente-tamano * 2.5);
+          }
+          &__subtitulo {
+               font-size: ($fuente-tamano * 1.7);
+          }
+     }
+
+}
+
+//MUSICA 
+@media only screen and (min-width: 768px) and (max-width: 1199px) {
+
+     .galeria {
+          // background-color: rgb(0, 0, 255);
+          display: grid;
+          grid-template-columns: repeat(3, auto);
+          grid-template-rows: repeat(4, auto);
+          gap: 3vw 3vw;
+          justify-content: center;          
+          grid-template-areas: 
+          "album1 album2  album3"
+          "album4 album5  album6"
+          "album7 album8  album9"
+          ".      album10 .";
+     }
+
+}
+
+@media only screen and (min-width: 1200px) {
+
+     .galeria {
+          // background-color: rgb(0, 100, 0);
+          display: grid;
+          grid-template-columns: repeat(4, auto);
+          grid-template-rows: repeat(3, auto);
+          gap: 3vw 3vw;
+          justify-content: center;          
+          grid-template-areas: 
+          "album1  album2  album3  album4"
+          "album5  album6  album7  album8"
+          ".       album9  album10 .";
+     }
+
+}
+
+//TIENDA 
+@media only screen and (min-width: 768px) and (max-width: 1199px) {
+
+     .catalogo {
+          // background-color: rgb(0, 0, 255);
+          display: grid;
+          grid-template-columns: repeat(3, 33%);
+          grid-template-rows: repeat(4, auto);
+          gap: 3vw 3vw;
+          grid-template-areas: 
+          "producto1 producto2  producto3"
+          "producto4 producto5  producto6"
+          "producto7 producto8  producto9"
+          "producto10 producto11 producto12";
+     }
+
+}
+
+@media only screen and (min-width: 1200px) {
+
+     .catalogo {
+          // background-color: rgb(0, 100, 0);
+          display: grid;
+          grid-template-columns: repeat(4, 25%);
+          grid-template-rows: repeat(3, auto);
+          gap: 3vw 3vw;
+          grid-template-areas: 
+          "producto1  producto2  producto3  producto4"
+          "producto5  producto6  producto7  producto8"
+          "producto9  producto10 producto11 producto12";
+     }
+
+}
+
+//TOUR
+@media only screen and (min-width: 768px) and (max-width: 1199px) {
+
+     .tour {
+          // background-color: deeppink;
+          .tour__mes__fecha__ciudad {
+               font-size: ($fuente-tamano * 1.5);
+          }          
+          .tour__mes__01 {
+               // background-color: darkorange;
+               display: grid;
+               grid-template-columns: 25% 75%;
+               grid-template-rows: auto auto;
+               grid-template-areas: 
+               "mes fecha01"
+               ".   fecha02";
+               .tour__mes__titulo {
+                    grid-area: mes;
+               }
+               .tour__fecha__01 {
+                    grid-area: fecha01;
+               }
+               .tour__fecha__02 {
+                    grid-area: fecha02;
+               }
+          }
+          .tour__mes__02 {
+               // background-color: darkorange;
+               display: grid;
+               grid-template-columns: 25% 75%;
+               grid-template-rows: auto auto auto;
+               grid-template-areas: 
+               "mes fecha03"
+               ".   fecha04"
+               ".   fecha05";
+               .tour__mes__titulo {
+                    grid-area: mes;
+               }
+               .tour__fecha__03 {
+                    grid-area: fecha03;
+               }
+               .tour__fecha__04 {
+                    grid-area: fecha04;
+               }
+               .tour__fecha__05 {
+                    grid-area: fecha05;
+               }
+          }
+          .tour__mes__03 {
+               // background-color: darkorange;
+               display: grid;
+               grid-template-columns: 25% 75%;
+               grid-template-rows: auto auto;
+               grid-template-areas: 
+               "mes fecha06"
+               ".   fecha07";
+               .tour__mes__titulo {
+                    grid-area: mes;
+               }
+               .tour__fecha__06 {
+                    grid-area: fecha06;
+               }
+               .tour__fecha__07 {
+                    grid-area: fecha07;
+               }
+          }
+     }
+
+}
+
+@media only screen and (min-width: 1200px) {
+
+     .tour {
+          // background-color: blue;
+          .tour__mes__fecha__ciudad {
+               font-size: ($fuente-tamano * 1.5);
+          }
+          .tour__mes__01 {
+               // background-color: darkorange;
+               display: grid;
+               grid-template-columns: 20% 40% 40%;
+               grid-template-rows: auto;
+               grid-template-areas: 
+               "mes fecha01 fecha02";
+               .tour__mes__titulo {
+                    grid-area: mes;
+               }
+               .tour__fecha__01 {
+                    grid-area: fecha01;
+               }
+               .tour__fecha__02 {
+                    grid-area: fecha02;
+               }
+          }
+          .tour__mes__02 {
+               // background-color: darkorange;
+               display: grid;
+               grid-template-columns: 20% 40% 40%;
+               grid-template-rows: auto auto;
+               grid-template-areas: 
+               "mes fecha03 fecha04"
+               ".   .       fecha05";
+               .tour__mes__titulo {
+                    grid-area: mes;
+               }
+               .tour__fecha__03 {
+                    grid-area: fecha03;
+               }
+               .tour__fecha__04 {
+                    grid-area: fecha04;
+               }
+               .tour__fecha__05 {
+                    grid-area: fecha05;
+               }
+          }
+          .tour__mes__03 {
+               // background-color: darkorange;
+               display: grid;
+               grid-template-columns: 20% 40% 40%;
+               grid-template-rows: auto;
+               grid-template-areas: 
+               "mes fecha06 fecha07";
+               .tour__mes__titulo {
+                    grid-area: mes;
+               }
+               .tour__fecha__06 {
+                    grid-area: fecha06;
+               }
+               .tour__fecha__07 {
+                    grid-area: fecha07;
+               }
+          }
+     }
+}

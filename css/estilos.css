@@ -1,0 +1,396 @@
+.boton {
+  background-color: #c80000;
+  color: white;
+  border: none; }
+  .boton:hover {
+    background-color: white;
+    color: #c80000; }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  background-color: black;
+  font-family: "Averia Sans Libre", cursive;
+  font-size: 1rem;
+  color: white; }
+  body ul {
+    list-style: none; }
+  body a {
+    text-decoration: none;
+    color: #c80000; }
+    body a:hover {
+      color: white; }
+  body .container {
+    margin: 2rem auto; }
+    body .container .container__titulo {
+      margin-top: 2rem;
+      margin-bottom: 2rem;
+      font-size: 2rem;
+      text-align: center; }
+
+.error404 {
+  margin: 0 auto;
+  align-items: center; }
+  .error404__imagen {
+    width: 100%; }
+
+.menu {
+  background-color: black; }
+  .menu__logo {
+    width: 6rem; }
+  .menu__burger {
+    color: #c80000;
+    border-color: #c80000; }
+  .menu__paginas .nav-item {
+    padding-left: .4rem;
+    padding-right: .4rem; }
+  .menu__paginas__link {
+    font-size: 1.2rem;
+    color: #c80000;
+    transition: all .5s ease; }
+    .menu__paginas__link:hover {
+      color: white;
+      transform: translateY(5px); }
+  .menu__paginas__link--activo {
+    color: gray; }
+  .menu__redes .nav-item {
+    padding-left: .4rem;
+    padding-right: .4rem; }
+  .menu__redes__link {
+    font-size: 1.5rem;
+    color: #c80000;
+    transition: all .5s ease; }
+    .menu__redes__link:hover {
+      color: white;
+      transform: translateY(5px); }
+    .menu__redes__link:visited {
+      color: #c80000; }
+
+.compra {
+  margin-top: 4rem;
+  padding: 1rem;
+  border: solid 0.2rem #c80000;
+  border-radius: 1%; }
+  .compra .pago__medios {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; }
+    .compra .pago__medios__link {
+      padding-right: 1.5rem;
+      font-size: 2rem; }
+
+.album__cover {
+  width: 100%;
+  opacity: .7;
+  transition: all 1s ease; }
+  .album__cover:hover {
+    opacity: 1;
+    transform: scale(1.1, 1.1); }
+
+.album__titulo {
+  color: white; }
+
+.album__fondo {
+  background-color: #333333; }
+
+.album__cancion {
+  background-color: black;
+  padding: 0; }
+  .album__cancion:hover {
+    background-color: #c80000; }
+  .album__cancion__link {
+    padding: 1rem;
+    display: block; }
+    .album__cancion__link:hover {
+      background-color: #c80000; }
+
+.producto {
+  margin: .2rem; }
+  .producto__imagen {
+    width: 100%; }
+  .producto__nombre {
+    padding: 2%;
+    color: #c80000;
+    text-align: center; }
+  .producto__valor {
+    text-align: center; }
+  .producto__boton {
+    width: 100%; }
+
+.tour__mes .tour__mes__titulo {
+  margin: 1rem;
+  padding: .5rem;
+  font-size: 2rem; }
+
+.tour__mes .tour__mes__fecha {
+  border-top: solid 0.2rem #c80000;
+  border-left: solid 0.2rem #c80000;
+  margin: 1rem;
+  padding: .5rem;
+  transition: all 1s ease; }
+  .tour__mes .tour__mes__fecha:hover {
+    transform: translate(-40px);
+    background-color: #262626; }
+  .tour__mes .tour__mes__fecha .tour__mes__fecha__link {
+    font-size: 1.2rem; }
+
+.portada {
+  margin: 0 auto; }
+  .portada__imagen {
+    width: 100%; }
+  .portada__slide__texto {
+    background-color: #1e1e1e;
+    width: 100%;
+    left: 0;
+    bottom: 5%; }
+  .portada__slide__link {
+    font-size: x-large;
+    font-stretch: extra-expanded;
+    font-weight: bold; }
+  .portada__slide__link:hover {
+    color: #c8c8c8; }
+  .portada__section {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center; }
+    .portada__section__video {
+      justify-content: center; }
+  .portada__info__titulo {
+    font-size: 2rem;
+    text-align: center; }
+  .portada__info__subtitulo {
+    font-size: 1.5rem;
+    text-align: center; }
+  .portada__info__detalles {
+    font-size: 1rem;
+    text-align: center; }
+  .portada__info__canciones {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center; }
+    .portada__info__canciones ul {
+      padding: 0; }
+
+.catalogo {
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
+  grid-template-rows: repeat(6, auto);
+  column-gap: 2vw;
+  row-gap: 2vw;
+  justify-content: center;
+  grid-template-areas: "producto1 producto2" "producto3 producto4" "producto5 producto6" "producto7 producto8" "producto9 producto10" "producto11 producto12"; }
+  .catalogo .producto__killLentes {
+    grid-area: producto1; }
+  .catalogo .producto__loadBarbijo {
+    grid-area: producto2; }
+  .catalogo .producto__rideRemera {
+    grid-area: producto3; }
+  .catalogo .producto__masterRemera {
+    grid-area: producto4; }
+  .catalogo .producto__justiceRemera {
+    grid-area: producto5; }
+  .catalogo .producto__kilRemera {
+    grid-area: producto6; }
+  .catalogo .producto__blackAlbum {
+    grid-area: producto7; }
+  .catalogo .producto__blackAlbum3CD {
+    grid-area: producto8; }
+  .catalogo .producto__blackAlbumDeluxe {
+    grid-area: producto9; }
+  .catalogo .producto__blackCassette {
+    grid-area: producto10; }
+  .catalogo .producto__blackCuaderno {
+    grid-area: producto11; }
+  .catalogo .producto__blackReloj {
+    grid-area: producto12; }
+
+.galeria {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  grid-template-rows: repeat(5, auto);
+  column-gap: 2vw;
+  row-gap: 2vw;
+  justify-content: center;
+  grid-template-areas: "album1 album2" "album3 album4" "album5 album6" "album7 album8" "album9 album10"; }
+  .galeria .album__Kill {
+    grid-area: album1; }
+  .galeria .album__Ride {
+    grid-area: album2; }
+  .galeria .album__Master {
+    grid-area: album3; }
+  .galeria .album__Justice {
+    grid-area: album4; }
+  .galeria .album__Black {
+    grid-area: album5; }
+  .galeria .album__Load {
+    grid-area: album6; }
+  .galeria .album__Reload {
+    grid-area: album7; }
+  .galeria .album__Anger {
+    grid-area: album8; }
+  .galeria .album__Death {
+    grid-area: album9; }
+  .galeria .album__Hardwire {
+    grid-area: album10; }
+
+.tour {
+  display: grid;
+  grid-template-columns: repeat(1, auto);
+  grid-template-rows: repeat(3, auto);
+  column-gap: 0vw;
+  row-gap: 2vw;
+  justify-content: center;
+  grid-template-areas: "mes01" "mes02" "mes03"; }
+  .tour .tour__mes__01 {
+    grid-area: mes01; }
+  .tour .tour__mes__02 {
+    grid-area: mes02; }
+  .tour .tour__mes__03 {
+    grid-area: mes03; }
+
+@media only screen and (min-width: 768px) and (max-width: 1199px) {
+  .portada__section {
+    padding: 1rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center; }
+  .portada__info {
+    padding: .5rem; }
+    .portada__info__titulo {
+      font-size: 1.5rem; }
+    .portada__info__subtitulo {
+      font-size: 1.2rem; } }
+
+@media only screen and (min-width: 1200px) {
+  .portada__section {
+    padding: 2rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center; }
+  .portada__info {
+    padding: .5rem; }
+    .portada__info__titulo {
+      font-size: 2.5rem; }
+    .portada__info__subtitulo {
+      font-size: 1.7rem; } }
+
+@media only screen and (min-width: 768px) and (max-width: 1199px) {
+  .galeria {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: repeat(4, auto);
+    gap: 3vw 3vw;
+    justify-content: center;
+    grid-template-areas: "album1 album2  album3" "album4 album5  album6" "album7 album8  album9" ".      album10 ."; } }
+
+@media only screen and (min-width: 1200px) {
+  .galeria {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    grid-template-rows: repeat(3, auto);
+    gap: 3vw 3vw;
+    justify-content: center;
+    grid-template-areas: "album1  album2  album3  album4" "album5  album6  album7  album8" ".       album9  album10 ."; } }
+
+@media only screen and (min-width: 768px) and (max-width: 1199px) {
+  .catalogo {
+    display: grid;
+    grid-template-columns: repeat(3, 33%);
+    grid-template-rows: repeat(4, auto);
+    gap: 3vw 3vw;
+    grid-template-areas: "producto1 producto2  producto3" "producto4 producto5  producto6" "producto7 producto8  producto9" "producto10 producto11 producto12"; } }
+
+@media only screen and (min-width: 1200px) {
+  .catalogo {
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+    grid-template-rows: repeat(3, auto);
+    gap: 3vw 3vw;
+    grid-template-areas: "producto1  producto2  producto3  producto4" "producto5  producto6  producto7  producto8" "producto9  producto10 producto11 producto12"; } }
+
+@media only screen and (min-width: 768px) and (max-width: 1199px) {
+  .tour .tour__mes__fecha__ciudad {
+    font-size: 1.5rem; }
+  .tour .tour__mes__01 {
+    display: grid;
+    grid-template-columns: 25% 75%;
+    grid-template-rows: auto auto;
+    grid-template-areas: "mes fecha01" ".   fecha02"; }
+    .tour .tour__mes__01 .tour__mes__titulo {
+      grid-area: mes; }
+    .tour .tour__mes__01 .tour__fecha__01 {
+      grid-area: fecha01; }
+    .tour .tour__mes__01 .tour__fecha__02 {
+      grid-area: fecha02; }
+  .tour .tour__mes__02 {
+    display: grid;
+    grid-template-columns: 25% 75%;
+    grid-template-rows: auto auto auto;
+    grid-template-areas: "mes fecha03" ".   fecha04" ".   fecha05"; }
+    .tour .tour__mes__02 .tour__mes__titulo {
+      grid-area: mes; }
+    .tour .tour__mes__02 .tour__fecha__03 {
+      grid-area: fecha03; }
+    .tour .tour__mes__02 .tour__fecha__04 {
+      grid-area: fecha04; }
+    .tour .tour__mes__02 .tour__fecha__05 {
+      grid-area: fecha05; }
+  .tour .tour__mes__03 {
+    display: grid;
+    grid-template-columns: 25% 75%;
+    grid-template-rows: auto auto;
+    grid-template-areas: "mes fecha06" ".   fecha07"; }
+    .tour .tour__mes__03 .tour__mes__titulo {
+      grid-area: mes; }
+    .tour .tour__mes__03 .tour__fecha__06 {
+      grid-area: fecha06; }
+    .tour .tour__mes__03 .tour__fecha__07 {
+      grid-area: fecha07; } }
+
+@media only screen and (min-width: 1200px) {
+  .tour .tour__mes__fecha__ciudad {
+    font-size: 1.5rem; }
+  .tour .tour__mes__01 {
+    display: grid;
+    grid-template-columns: 20% 40% 40%;
+    grid-template-rows: auto;
+    grid-template-areas: "mes fecha01 fecha02"; }
+    .tour .tour__mes__01 .tour__mes__titulo {
+      grid-area: mes; }
+    .tour .tour__mes__01 .tour__fecha__01 {
+      grid-area: fecha01; }
+    .tour .tour__mes__01 .tour__fecha__02 {
+      grid-area: fecha02; }
+  .tour .tour__mes__02 {
+    display: grid;
+    grid-template-columns: 20% 40% 40%;
+    grid-template-rows: auto auto;
+    grid-template-areas: "mes fecha03 fecha04" ".   .       fecha05"; }
+    .tour .tour__mes__02 .tour__mes__titulo {
+      grid-area: mes; }
+    .tour .tour__mes__02 .tour__fecha__03 {
+      grid-area: fecha03; }
+    .tour .tour__mes__02 .tour__fecha__04 {
+      grid-area: fecha04; }
+    .tour .tour__mes__02 .tour__fecha__05 {
+      grid-area: fecha05; }
+  .tour .tour__mes__03 {
+    display: grid;
+    grid-template-columns: 20% 40% 40%;
+    grid-template-rows: auto;
+    grid-template-areas: "mes fecha06 fecha07"; }
+    .tour .tour__mes__03 .tour__mes__titulo {
+      grid-area: mes; }
+    .tour .tour__mes__03 .tour__fecha__06 {
+      grid-area: fecha06; }
+    .tour .tour__mes__03 .tour__fecha__07 {
+      grid-area: fecha07; } }

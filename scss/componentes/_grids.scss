@@ -1,0 +1,109 @@
+
+//TIENDA
+.catalogo {
+     @include grillas__simetricas(2, 50%, 6, auto, 2vw, 2vw);
+     grid-template-areas: 
+     "producto1 producto2"
+     "producto3 producto4"
+     "producto5 producto6"
+     "producto7 producto8"
+     "producto9 producto10"
+     "producto11 producto12";
+     .producto__killLentes {
+          grid-area: producto1;
+     }
+     .producto__loadBarbijo {
+          grid-area: producto2;
+     }
+     .producto__rideRemera {
+          grid-area: producto3;
+     }
+     .producto__masterRemera {
+          grid-area: producto4;
+     }
+     .producto__justiceRemera {
+          grid-area: producto5;
+     }
+     .producto__kilRemera {
+          grid-area: producto6;
+     }
+     .producto__blackAlbum {
+          grid-area: producto7;
+     }
+     .producto__blackAlbum3CD {
+          grid-area: producto8;
+     }
+     .producto__blackAlbumDeluxe {
+          grid-area: producto9;
+     }
+     .producto__blackCassette {
+          grid-area: producto10;
+     }
+     .producto__blackCuaderno {
+          grid-area: producto11;
+     }
+     .producto__blackReloj {
+          grid-area: producto12;
+     }
+}
+
+// MUSIC
+.galeria {
+     // background-color: rgb(200, 0, 40);
+     @include grillas__simetricas(2, auto, 5, auto, 2vw, 2vw);    
+     grid-template-areas: 
+     "album1 album2"
+     "album3 album4"
+     "album5 album6"
+     "album7 album8"
+     "album9 album10";
+     .album__Kill {
+          grid-area: album1;
+     }
+     .album__Ride {
+          grid-area: album2;
+     }
+     .album__Master {
+          grid-area: album3;
+     }
+     .album__Justice {
+          grid-area: album4;
+     }
+     .album__Black {
+          grid-area: album5;
+     }
+     .album__Load {
+          grid-area: album6;
+     }
+     .album__Reload {
+          grid-area: album7;
+     }
+     .album__Anger {
+          grid-area: album8;
+     }
+     .album__Death {
+          grid-area: album9;
+     }
+     .album__Hardwire {
+          grid-area: album10;
+     }
+}
+
+// TOUR
+.tour {
+     // background-color: rgb(200, 0, 40);
+     @include grillas__simetricas(1, auto, 3, auto, 0vw, 2vw);
+     grid-template-areas: 
+     "mes01"
+     "mes02"
+     "mes03";
+     .tour__mes__01 {
+          grid-area: mes01;
+     }
+     .tour__mes__02 {
+          grid-area: mes02;
+     }
+     .tour__mes__03 {
+          grid-area: mes03;
+     }
+}

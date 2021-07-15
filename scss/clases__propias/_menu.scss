@@ -1,0 +1,55 @@
+// menu
+// menu__logo
+// menu__burger
+// menu__paginas
+// menu__paginas__link
+// menu__paginas__link--activo
+// menu__redes
+// menu__redes__link
+
+.menu {
+     background-color: $color-fondo;
+     &__logo {
+          width: 6rem;
+     }
+     &__burger {
+          color: rgb(200, 0, 0);
+          border-color: rgb(200, 0, 0);
+     }
+     &__paginas {
+          .nav-item {
+               padding-left: .4rem;
+               padding-right: .4rem;
+          }
+          &__link {
+               font-size: $fuente-tamano * 1.2;
+               color: $color-link;
+               transition: all .5s ease;
+               &:hover {
+                    color: $color-texto;
+                    transform: translateY(5px); //scale(1.1);
+               }
+          }
+          &__link--activo {
+               color: $color-link-activo;
+          }
+     }
+     &__redes {
+          .nav-item {
+               padding-left: .4rem;
+               padding-right: .4rem;
+          }
+          &__link {
+               font-size: $fuente-tamano * 1.5;
+               color: $color-link;
+               transition: all .5s ease;
+               &:hover {
+                    color: $color-texto;
+                    transform: translateY(5px); //scale(1.2, 1.2);
+               }
+               &:visited {
+                    color: $color-link;
+               }
+          }
+     }
+}

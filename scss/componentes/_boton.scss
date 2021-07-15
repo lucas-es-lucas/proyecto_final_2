@@ -1,0 +1,9 @@
+.boton {
+     background-color: $color-link;
+     color: $color-texto;
+     border: none;
+     &:hover {
+          background-color: $color-texto;
+          color: $color-link;
+     }
+}

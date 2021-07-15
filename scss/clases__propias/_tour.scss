@@ -1,0 +1,23 @@
+.tour__mes {
+     // background-color: deepskyblue;
+     .tour__mes__titulo {
+          margin: 1rem;
+          padding: .5rem;
+          font-size: ($fuente-tamano * 2);
+     }
+     .tour__mes__fecha {
+          // background-color: forestgreen;               
+          border-top: solid .2rem rgb(200, 0, 0);
+          border-left: solid .2rem rgb(200, 0, 0);
+          margin: 1rem;
+          padding: .5rem;
+          transition: all 1s ease;
+          &:hover {
+               transform: translate(-40px);
+               background-color: lighten($color-fondo, $amount: 15);
+          }
+          .tour__mes__fecha__link {
+               font-size: ($fuente-tamano * 1.2);
+          }
+     }
+}
